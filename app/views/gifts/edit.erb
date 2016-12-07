@@ -1,0 +1,10 @@
+<div class="">
+  <%= erb :'/gifts/_errors' %>
+
+  <form class="" action="/gifts/<%= @gift.id%>" method="post">
+    <input type="hidden" name='_method' value='put'>
+    <label for="">Name</label>
+    <input type="text" name="gift[name]" value="<%= @gift.name%>">
+    <input type="submit" name="" value="Submit">
+  </form>
+</div>

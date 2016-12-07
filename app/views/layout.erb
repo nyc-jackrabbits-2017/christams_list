@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- 
+  <!--
     normalize.css removes cross-browser differences in defaults, e.g.,
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
@@ -11,6 +11,7 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
+  <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
@@ -18,6 +19,32 @@
   <title></title>
 </head>
 <body>
-  <%= yield %>
+<aside class="left">
+  <div class="christmas">
+    <div id="the-wrap">
+      <div class="ball-wrapper">
+        <div class="string"></div>
+        <div class="ring"></div>
+        <div class="button"></div>
+        <div class="red-ball"></div>
+      </div>
+
+
+      <div class="green-ball-wrapper">
+        <div class="green-string"></div>
+        <div class="green-ring"></div>
+        <div class="green-button"></div>
+        <div class="green-ball"></div>
+      </div>
+
+    </div>
+  </div>
+</aside>
+  <aside class="right">
+    <ul class='gift'>
+      <li>Christmas Gifts List</li>
+    </ul>
+    <%= yield %>
+  </aside>
 </body>
 </html>

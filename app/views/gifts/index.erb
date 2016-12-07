@@ -1,0 +1,9 @@
+<div class="container list">
+  <ul class='gift-list'>
+    <% @gifts.each do |gift| %>
+    <li><%= gift.name%></li> <span class='edit-gift'><a href="/gifts/<%=gift.id%>/edit">Edit</a></span>
+    <% end %>
+  </ul>
+
+  <a href="/gifts/new">New gift</a>
+</div>
