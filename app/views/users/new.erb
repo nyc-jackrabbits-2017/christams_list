@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="errors">
+    <% if @errors %>
+      <ul>
+        <% @errors.each do |error| %>
+        <li><%= error%></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
+    <form class="" action="/users" method="post">
+        <div class="">
+            <label for="username">Username</label>
+            <input id='username' type="text" name="user[username]" value="" placeholder='Username'>
+        </div>
+        <div class="">
+            <label for="email">Email</label>
+            <input id='email' type="email" name="user[email]" value="" placeholder='Email'>
+        </div>
+        <div class="">
+            <label for="password">Password</label>
+            <input id='password' type="password" name="user[password]" value="" placeholder='Password'>
+        </div>
+        <div class="">
+          <input type="submit" name="" value="Create">
+        </div>
+    </form>
+</div>

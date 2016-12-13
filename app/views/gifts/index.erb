@@ -5,5 +5,7 @@
     <% end %>
   </ul>
 
-  <a href="/gifts/new">New gift</a>
+  <% if current_user %>
+    <a href="/gifts/new">New gift</a>
+  <% end %>
 </div>

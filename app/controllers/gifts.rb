@@ -5,6 +5,7 @@ end
 
 
 get '/gifts/new' do
+  require_user
   erb :'gifts/new'
 end
 
@@ -20,6 +21,7 @@ post '/gifts' do
 end
 
 get '/gifts/:id/edit' do
+  require_user
   @gift = Gift.find(params[:id])
   erb :'gifts/edit'
 end
