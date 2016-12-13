@@ -206,3 +206,24 @@ th {
   padding: 10px;
   margin: 10px;
 }
+
+
+.navigation-bar ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+.menu li a {
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bolder;
+}
